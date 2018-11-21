@@ -6,6 +6,26 @@ I started hearing about the “Y combinator” from many directions. Since funct
 
 There is [an exhaustive article][link] on this topic. It explains the idea on a factorial function, mostly using Scheme. I started with the two approaches using Ruby, going only one bit at a time.
 
+## Howto ##
+
+Install the dependencies.
+
+```
+$ bundle install
+```
+
+Run the tests.
+
+```
+$ ruby test.rb
+```
+
+Run the non-recursive factorial.
+
+```
+$ ruby run.rb 20
+```
+
 ## Progress ##
 
 * [x] Write a non-recursive factorial using a loop
