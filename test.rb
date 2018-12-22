@@ -1,8 +1,9 @@
 require('minitest/autorun')
 require_relative('factorial_non_recursive')
 require_relative('factorial_recursive')
+require_relative('almost_factorial')
 
-[FactorialNonRecursive, FactorialRecursive].each do |mod|
+[FactorialNonRecursive, FactorialRecursive, AlmostFactorial].each do |mod|
   klass = Class.new(Minitest::Test) do |klass|
     def test_zero
       assert_equal 1, mod.factorial(0)
